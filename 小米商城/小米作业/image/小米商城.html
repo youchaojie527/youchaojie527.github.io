@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="游超杰">
+        <title>小米商城</title>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            html,body{
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+            }
+            body{
+                background-color: #F5F5F5;
+            }
+            .container{
+                padding: 0px;
+            }
+            .input-group{
+                background-color: #E58335;
+                padding: 10px 10px;
+            }
+            .btn-default{
+                margin-left: 10px;
+                background-color: #E58335;
+                color: #FFFFFF;
+            }
+            .input-group-btn .logo{
+                width: 40px;
+                height: 30px;
+                margin: 0px 15px;
+            }
+            #carousel-example-generic{
+                margin-top: 55px;
+            }
+            .top-left{
+                width: 30%;
+                height: 100%;
+                margin-left: 10px;
+            }
+            .top-left img{
+                width: 100%;
+                height: 100%;
+            }
+            .top-mild{
+                width: 30%;
+                height: 100%;
+            }
+            .top-mild img{
+                width: 100%;
+                height: 100%;
+            }
+            .top-right{
+                width: 30%;
+                height: 100%;
+                margin-right: 10px;
+            }
+            .top-right img{
+                width: 100%;
+                height: 100%;
+            }
+            .top{
+                display: flex;
+                justify-content: space-between;
+            }
+            .bottom-1{
+                width: 100%;
+                height: 110px;
+                margin-top: 5px;
+                background-color: #FFFFFF;
+            }
+            .remaitu{
+                width: 28% ;
+                height: 70%;
+                background-image: url(mimall/sec-1.jpg);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                position: relative;
+                bottom: 55px;
+            }
+            .remaitu img{
+                width: 50px;
+                height: 50px;
+                position: relative;
+                left: 15px;
+                top: 15px;
+            }
+            .bottom-2{
+                width: 100%;
+                height: 110px;
+                margin-top: 5px;
+                background-color: #FFFFFF;
+            }
+            .bottom-2 img{
+                width: 30%;
+                height: 70%;
+                margin-top: -40px;
+                margin-bottom: 30px;
+            }
+            .wenzi{
+                width: 68%;
+                height: 100%;
+                display: inline-block;
+                line-height: 25px;
+            }
+            .container-2{
+                display: flex;
+                justify-content: space-between;
+            }
+            .container-2 span{
+                margin: 5px 20px;
+                color: darkgray;
+            }
+            .container-2 span:hover{
+                color: #FFAA00;
+            }
+            .container-2 span p{
+                position: relative;
+                margin-top: 5px;
+                right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+       <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div >
+                    <div class="input-group"> 
+                        <span class="input-group-btn">
+                            <img  class="logo" src="mimall/logo.ico" alt="">
+                        </span>
+                        <input type="text" class="form-control" placeholder="搜索商品名称" style="width: 76%;">
+                        <button class="btn btn-default" type="submit" style="border: none">登录</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+         <!--data-interval="5000":通过调整这个属性来调整轮播的间隔时间-->
+        <section id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <!-- Indicators ：轮播图的指示器(点)-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+        <!-- Wrapper for slides;轮流播放的内容 -->
+            <div class="carousel-inner" role="listbox">
+                <!--item：表示轮播的每一项内容-->
+                <div class="item active">
+                    <!--轮播的图片-->
+                    <img src="mimall/carousel-1.jpg" alt="...">
+                    <div class="carousel-caption">
+                        第一张图片
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="mimall/carousel-2.jpg" alt="...">
+                    <!--轮播的标签-->
+                    <div class="carousel-caption">
+                        第二张图片
+                    </div>
+                </div>
+                 <div class="item">
+                    <img src="mimall/carousel-4.jpg" alt="...">
+                    <div class="carousel-caption">
+                        第三张图片
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="top">
+                <div class="top-left">
+                    <img src="mimall/mi-note-3.jpg" alt="">
+                </div>
+                <div class="top-mild">
+                    <img src="mimall/mi-red-3s.jpg" alt="">
+                </div>
+                <div class="top-right">
+                    <img src="mimall/mi-5.jpg" alt="">
+                </div>
+            </div>
+            <div class="bottom-1">
+                <div class="remaitu">
+                    <img src="mimall/hot.png" alt="">
+                </div>
+                <div style="width: 70%;display: inline-block">
+                    <span style="font-size: 16px">小米Max全网通</span>
+                    <p style="color: gray;margin-top: 10px">6.44大屏黄金尺寸/4850mAh大电量/指纹识别/2.5D玻璃</p>
+                    <p style="color: red">1499元&#x3000;起</p>
+                </div>
+            </div>
+            <div class="bottom-2">
+                <img src="mimall/sec-1.jpg" alt="">
+                <div class="wenzi">
+                    <span style="font-size: 16px">小米Max全网通</span><br>
+                    <span style="color: gray">6.44大屏黄金尺寸/4850mAh大电量/指纹识别/2.5D玻璃</span>
+                    <p style="color: red">1499元&#x3000;起</p>
+                </div>
+            </div>
+            <div class="bottom-2">
+                <img src="mimall/sec-1.jpg" alt="">
+                <div class="wenzi">
+                    <span style="font-size: 16px">小米Max全网通</span><br>
+                    <span style="color: gray">6.44大屏黄金尺寸/4850mAh大电量/指纹识别/2.5D玻璃</span>
+                    <p style="color: red">1499元&#x3000;起</p>
+                </div>
+            </div>
+            <div class="bottom-2">
+                <img src="mimall/sec-1.jpg" alt="">
+                <div class="wenzi">
+                    <span style="font-size: 16px">小米Max全网通</span><br>
+                    <span style="color: gray">6.44大屏黄金尺寸/4850mAh大电量/指纹识别/2.5D玻璃</span>
+                    <p style="color: red">1499元&#x3000;起</p>
+                </div>
+            </div>
+        </section>
+        <nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-2">
+                <a href="#"><span class="glyphicon glyphicon-home"><p>商城</p></span></a>
+                <a href="小米分类.html"><span class="glyphicon glyphicon-home"><p>分类</p></span></a>
+                <a href="小米购物车.html"><span class="glyphicon glyphicon-shopping-cart"><p>购物车</p></span></a>
+                <a href="小米服务.html"><span class="glyphicon glyphicon-home"><p>服务</p></span></a>
+            </div>
+        </nav>
+        <script src="bootstrap/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

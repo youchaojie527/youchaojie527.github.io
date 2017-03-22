@@ -1,0 +1,61 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+}
+.input-group{
+    width: 100%;
+    margin-top: 8px;
+}
+.one{
+    width: 100%;
+    margin-top: 65px;
+    background-color: #F5F5F5;
+}
+
+.section-top{
+    display: flex;
+    flex-wrap: wrap;
+}
+.one p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 95px;
+}
+.section-top figure img{
+    width: 78px;
+    height: 70px;
+}
+.section-top figure{
+    margin: 0px 5px;
+}.section-top figure figcaption{
+    text-align: center;
+    line-height: 65px;
+}
+.two{
+    width: 100%;
+    margin: 20px 0px;
+    background-color: #F5F5F5;
+}
+.two p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 95px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container span{
+    margin: 5px 20px;
+    color: darkgray;
+}
+.container span:hover{
+    color: #FFAA00;
+}
+.container span p{
+    position: relative;
+    margin-top: 5px;
+    right: 5px;
+}
